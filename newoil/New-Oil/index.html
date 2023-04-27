@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <title>New oil</title>
+ 
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+</head>
+<style>
+   body {
+      background-image: url('images/NVFTBACK.png');
+ 
+     ;
+   
+   
+   }
+</style>
+</head>
+<body>
+   
+<!-- header section starts  -->
+
+<header class="header">
+
+   <section class="flex">
+
+      <a href="#home" class="logo"><span class="lgn"> <style>.lgn {color:rgb(37, 128, 37)}</style>N</span>ewoilcosmetic</a>
+
+      <nav class="navbar">
+         
+         <a href="#home">home</a>
+         <a href="#about">about</a>
+         <a href="#menu">menu</a>
+         <a href="#order">order</a>
+         <a href="#faq">faq</a>
+      </nav>
+
+      <div class="icons">
+         <div id="menu-btn" class="fas fa-bars"></div>
+         <div id="user-btn" class="fas fa-user"></div>
+         <div id="order-btn" class="fas fa-box"></div>
+         <div id="cart-btn" class="fas fa-shopping-cart"><span>(4)</span></div>
+      </div>
+
+   </section>
+
+</header>
+
+<!-- header section ends -->
+
+<div class="user-account">
+
+   <section>
+
+      <div id="close-account"><span>close</span></div>
+
+      <div class="user">
+         <p><span>you are not logged in now!</span></p>
+      </div>
+
+      <div class="display-orders">
+         <p>HUILE <span>( $3/- x 2 )</span></p>
+         <p>HUILE 03 <span>( $2/- x 1 )</span></p>
+         <p>HUILE 06 <span>( $4/- x 4 )</span></p>
+         <p>HUILE 07 <span>( $2/- x 1 )</span></p>
+      </div>
+
+      <div class="flex">
+
+         <form action="" method="post">
+            <h3>login now</h3>
+            <input type="email" name="email" required class="box" placeholder="enter your email" maxlength="50">
+            <input type="password" name="pass" required class="box" placeholder="enter your password" maxlength="20">
+            <input type="submit" value="login now" name="login" class="btn">
+         </form>
+
+         <form action="" method="post">
+            <h3>register now</h3>
+            <input type="text" name="name" required class="box" placeholder="enter your name" maxlength="20">
+            <input type="email" name="email" required class="box" placeholder="enter your email" maxlength="50">
+            <input type="password" name="pass" required class="box" placeholder="enter your password" maxlength="20">
+            <input type="password" name="cpass" required class="box" placeholder="confirm your password" maxlength="20">
+            <input type="submit" value="register now" name="register" class="btn">
+         </form>
+
+      </div>
+
+   </section>
+
+</div>
+
+<div class="my-orders">
+
+   <section>
+
+      <div id="close-orders"><span>close</span></div>
+
+      <h3 class="title"> my orders </h3>
+
+      <div class="box">
+         <p>placed on : <span>06/04/2022</span> </p>
+         <p>name : <span>HAJAR</span> </p>
+         <p>number : <span>1234567890</span></p>
+         <p>address : <span>CASABLANCA</span></p>
+         <p>payment method : <span>cash on delivery</span></p>
+         <p>your orders : <span>HUILE D'AMANDE</span></p>
+         <p>total price : <span>$11/-</span></p>
+         <p>payment status : <span style="color: var(--red);">pending</span> </p>
+      </div>
+
+      <div class="box">
+         <p>placed on : <span>06/04/2022</span> </p>
+         <p>name : <span>HAJARR</span> </p>
+         <p>number : <span>1234567890</span></p>
+         <p>address : <span>Rabat</span></p>
+         <p>payment method : <span>cash on delivery</span></p>
+         <p>your orders : <span> huile de ricin</span></p>
+         <p>total price : <span>$11/-</span></p>
+         <p>payment status : <span style="color: var(--red);">pending</span> </p>
+      </div>
+
+   </section>
+
+</div>
+
+<div class="shopping-cart">
+
+   <section>
+
+      <div id="close-cart"><span>close</span></div>
+
+      <div class="box">
+         <a href="#" class="fas fa-times"></a>
+         <img src="images/huiledargan.jpg" alt="">
+         <div class="content">
+            <p>Huile d'argan <span>( $3/- x 2 )</span></p>
+            <form action="" method="post">
+               <input type="number" class="qty" name="qty" min="1" value="2" max="100">
+               <button type="submit" class="fas fa-edit" name="update_qty"></button>
+            </form>
+         </div>
+      </div>
+
+      <div class="box">
+         <a href="#" class="fas fa-times"></a>
+         <img src="images/huilefigue.jpg" alt="">
+         <div class="content">
+            <p>Huile de figue <span></span></p>
+            <form action="" method="post">
+               <input type="number" class="qty" name="qty" min="1" value="1" max="100">
+               <button type="submit" class="fas fa-edit" name="update_qty"></button>
+            </form>
+         </div>
+      </div>
+
+      <div class="box">
+         <a href="#" class="fas fa-times"></a>
+         <img src="images/huiledamande.jpg" alt="">
+         <div class="content">
+            <p>huile d'amande<span>( $4/- x 2 )</span></p>
+            <form action="" method="post">
+               <input type="number" class="qty" name="qty" min="1" value="2" max="100">
+               <button type="submit" class="fas fa-edit" name="update_qty"></button>
+            </form>
+         </div>
+      </div>
+
+      <div class="box">
+         <a href="#" class="fas fa-times"></a>
+         <img src="images/huiledabricot.jpg" alt="">
+         <div class="content">
+            <p>huile d'abricot <span>( $2/- x 1 )</span></p>
+            <form action="" method="post">
+               <input type="number" class="qty" name="qty" min="1" value="1" max="100">
+               <button type="submit" class="fas fa-edit" name="update_qty"></button>
+            </form>
+         </div>
+      </div>
+
+      <a href="#order" class="btn">order now</a>
+
+   </section>
+
+</div>
+
+<div class="home-bg">
+
+   <!-- home section starts  -->
+
+<section class="home" id="home">
+
+   <div class="swiper home-slider">
+
+      <div class="swiper-wrapper">
+
+         <div class="box swiper-slide">
+            <img src="images/home-img-1.jpeg" alt="">
+            <div class="flex">
+               <h3>the best products </h3>
+               <a href="#menu" class="btn">menu</a>
+            </div>
+         </div>
+
+         <div class="box swiper-slide">
+            <img src="images/home-img-2.jpeg" alt="">
+            <div class="flex">
+               <h3>the best delivry</h3>
+               <a href="#order" class="btn">Order now</a>
+            </div>
+         </div>
+
+         <div class="box swiper-slide">
+            <img src="images/home-img-3.jpeg" alt="">
+            <div class="flex">
+               <h3>frequented ask qst</h3>
+               <a href="#faq" class="btn">faq</a>
+            </div>
+         </div>
+
+      </div>
+
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+
+   </div>
+
+</section>
+
+<!-- home section ends -->
+
+</div>
+
+<!-- about section starts  -->
+
+<section class="about" id="about">
+
+   <h1 class="heading">about us</h1>
+
+   <div class="box-container">
+
+      <div class="box">
+         <img src="images/about-1.svg" alt="">
+         <h3>fait avec amour</h3>
+         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum quae amet beatae magni numquam facere sit. Tempora vel laboriosam repudiandae!</p>
+         <a href="#menu" class="btn">our menu</a>
+      </div>
+
+      <div class="box">
+         <img src="images/about-2.svg" alt="">
+         <h3>24H Laivraison</h3>
+         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum quae amet beatae magni numquam facere sit. Tempora vel laboriosam repudiandae!</p>
+         <a href="#menu" class="btn">our menu</a>
+      </div>
+
+      <div class="box">
+         <img src="images/about-3.svg" alt="">
+         <h3>pour un peau saine</h3>
+         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum quae amet beatae magni numquam facere sit. Tempora vel laboriosam repudiandae!</p>
+         <a href="#menu" class="btn">our menu</a>
+      </div>
+
+   </div>
+   
+ 
+
+
+</section>
+<section class="about" id="about">
+   <h1 class="heading">about us</h1>
+
+
+   <div class="row">
+      <div class="image">
+         <img src="images/about-4.png" alt="">
+      </div>
+      <div class="content">
+         <h3>D'originne naturelle</h3>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi laborum maxLorem ipsum dolor sit amet consectetur adipisicing elit. AnLorem ipsum dolor sit amet consectetur adipisicing elit. 
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi laborum maxAnimi laborum maxAnimi laborum maximi laborum maxime eius aliquid temporibus unde?</p>
+        
+      </div>
+   </div>
+
+   <div class="row revers">
+      <div class="image">
+      <video width="400px" height="450px"
+        controls="controls"/>
+         
+        <source src="images/Noc-Oil.mp4"
+            type="video/mp4">>
+      </div>
+      <div class="content">
+         <h3>un eclat garantit</h3>
+         <p>Lorem ipsum dolor sit ametLorem ipsum dolor sit amet consectetur adipisicing elit. Animi laborum max
+         Lorem ipsum dolor sit amet consecte
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi laborum maxtur adipisicing elit. Animi laborum max consectetur adipisicing elit. Animi laborum maxime eius aliquid temporibus unde?</p>
+         
+      </div>
+   </div>
+
+   <div class="row">
+      <div class="image">
+         <img src="images/about-1.PNG" alt="">
+      </div>
+      <div class="content">
+         <h3>un extremme soin pour sa peau  </h3>
+         <p>Lorem ipsum dolor sit 
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi laborum maxLorem ipsum dolor sit amet consectetur adipisicing elit. Animi laborum maxamet consectetur adipisicing elit. Animi laborum maxime eius aliquid temporibus unde?</p>
+
+         
+      </div>
+   </div>
+
+</section>
+
+
+<!-- about section ends -->
+
+
+
+
+
+
+<!-- menu section starts  -->
+
+<section id="menu" class="menu">
+
+   <h1 class="heading">our menu</h1>
+
+   <div class="box-container">
+
+      <div class="box">
+         <div class="price">$<span>2</span>/-</div>
+         <img src="images/huiledargan.jpg" alt="">
+         <div class="name">huile d'argan</div>
+         <form action="" method="post">
+            <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+            <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+         </form>
+      </div>
+
+      <div class="box">
+         <div class="price">$<span>4</span>/-</div>
+         <img src="images/huiledabricot.jpg" alt="">
+         <div class="name">huile d'abricot</div>
+         <form action="" method="post">
+            <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+            <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+         </form>
+      </div>
+
+      <div class="box">
+         <div class="price">$<span>2</span>/-</div>
+         <img src="images/huiledamande.jpg" alt="">
+         <div class="name">huile d'amande</div>
+         <form action="" method="post">
+            <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+            <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+         </form>
+      </div>
+
+      <div class="box">
+         <div class="price">$<span>3</span>/-</div>
+         <img src="images/huiledechanvre.jpg" alt="">
+         <div class="name">huile de chanvre</div>
+         <form action="" method="post">
+            <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+            <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+         </form>
+      </div>
+
+      <div class="box">
+         <div class="price">DH<span>2</span>/-</div>
+         <img src="images/huiledericin.jpg" alt="">
+         <div class="name">huile de ricin</div>
+         <form action="" method="post">
+            <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+            <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+         </form>
+      </div>
+
+      <div class="box">
+         <div class="price">DH<span>4</span>/-</div>
+         <img src="images/huiledemyrte.jpg" alt="">
+         <div class="name">huile de myrte</div>
+         <form action="" method="post">
+            <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+            <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+         </form>
+      </div>
+
+      <div class="box">
+         <div class="price">DH<span>2</span>/-</div>
+         <img src="images/huilefigue.jpg" alt="">
+         <div class="name">huile de figue</div>
+         <form action="" method="post">
+            <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+            <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+         </form>
+      </div>
+
+      <div class="box">
+         <div class="price">DH<span>3</span>/-</div>
+         <img src="images/huilelentisque.jpg" alt="">
+         <div class="name"> huile de lentisque</div>
+         <form action="" method="post">
+            <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+            <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+         </form>
+      </div>
+
+      
+   </div>
+
+</section>
+
+
+<!-- menu section ends -->
+
+<!-- gallery section starts  -->
+
+<section class="gallery" id="gallery">
+
+   <div class="swiper gallery-slider">
+      <div class="swiper-wrapper">
+         <img src="images/huilelentisque.jpg" class="swiper-slide" alt="">
+         <img src="images/huiledericin.jpg" class="swiper-slide" alt="">
+         <img src="images/huiledechanvre.jpg" class="swiper-slide" alt="">
+         <img src="images/huiledamande.jpg" class="swiper-slide" alt="">
+         <img src="images/huiledabricot.jpg" class="swiper-slide" alt="">
+         <img src="images//huiledargan.jpg" class="swiper-slide" alt="">
+      </div>
+      <div class="swiper-pagination"></div>
+   </div>
+
+</section>
+
+<!-- gallery section ends -->
+
+
+<!-- faq section starts  -->
+
+<section class="faq" id="faq">
+
+   <h1 class="heading">FAQ</h1>
+
+   <div class="accordion-container">
+
+      <div class="accordion active">
+         <div class="accordion-heading">
+            <span>comment ca ammarche</span>
+            <i class="fas fa-angle-down"></i>
+         </div>
+         <p class="accrodion-content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, quas. Quidem minima veniam accusantium maxime, doloremque iusto deleniti veritatis quos.
+         </p>
+      </div>
+
+      <div class="accordion">
+         <div class="accordion-heading">
+            <span>ca prend combien une livraison</span>
+            <i class="fas fa-angle-down"></i>
+         </div>
+         <p class="accrodion-content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, quas. Quidem minima veniam accusantium maxime, doloremque iusto deleniti veritatis quos.
+         </p>
+      </div>
+
+      <div class="accordion">
+         <div class="accordion-heading">
+            <span>Comment vous ...</span>
+            <i class="fas fa-angle-down"></i>
+         </div>
+         <p class="accrodion-content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, quas. Quidem minima veniam accusantium maxime, doloremque iusto deleniti veritatis quos.
+         </p>
+      </div>
+
+      <div class="accordion">
+         <div class="accordion-heading">
+            <span>quel est le mode de paimment</span>
+            <i class="fas fa-angle-down"></i>
+         </div>
+         <p class="accrodion-content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, quas. Quidem minima veniam accusantium maxime, doloremque iusto deleniti veritatis quos.
+         </p>
+      </div>
+
+
+      <div class="accordion">
+         <div class="accordion-heading">
+            <span>quel est le processus?</span>
+            <i class="fas fa-angle-down"></i>
+         </div>
+         <p class="accrodion-content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, quas. Quidem minima veniam accusantium maxime, doloremque iusto deleniti veritatis quos.
+         </p>
+      </div>
+
+   </div>
+
+</section>
+
+<!-- faq section ends -->
+<!-- SERVISES  section STARS  -->
+
+<section class="services">
+
+   <div class="box-container">
+
+      <div class="box">
+         <img src="images/icon-1.png" alt="">
+         <h3>non-téster sur animeaux</h3>
+         <p>Lorem ipsum dolor sit amet, com ipsum dolor sit amet, consectetur
+         m ipsum dolor sit amet, consecteturnsectetur adipisicing elit. Libero, sunt?</p>
+      </div>
+
+      <div class="box">
+         <img src="images/icon-2.png" alt="">
+         <h3>D'origine naturel</h3>
+         <p>Lorem ipsum dolor sit amet, consectetur am ipsum dolor sit amet, consecteturdipisicinm ipsum dolor sit amet, consectetur
+         m ipsum dolor sit amet, consecteturg elit. Libero, sunt?</p>
+      </div>
+
+      <div class="box">
+         <img src="images/icon-3.png" alt="">
+         <h3>ça vient de nos fermes</h3>
+         <p>Lorem ipsum dolor sit amet, consectetum ipsum dolor sit amet, consecteturm ipsum dolor sit amet, consectetur
+         m ipsum dolor sit amet, consecteturr adipisicing elit. Libero, sunt?</p>
+      </div>
+
+  
+
+   </div>
+
+</section>
+
+<!-- services section ends -->
+
+<!-- services section ends -->
+
+
+<!-- order section starts  -->
+
+<section class="order" id="order">
+
+   <h1 class="heading">order now</h1>
+
+   <form action="" method="post">
+
+      <div class="display-orders">
+         <p>pizza-1 <span>( $3/- x 2 )</span></p>
+         <p>pizza 03 <span>( $2/- x 1 )</span></p>
+         <p>pizza 06 <span>( $4/- x 4 )</span></p>
+         <p>pizza 07 <span>( $2/- x 1 )</span></p>
+      </div>
+
+      <div class="flex">
+         <div class="inputBox">
+            <span>your name :</span>
+            <input type="text" name="name" class="box" required placeholder="enter your name" maxlength="20">
+         </div>
+         <div class="inputBox">
+            <span>your number :</span>
+            <input type="number" name="number" class="box" required placeholder="enter your number" min="0">
+         </div>
+         <div class="inputBox">
+            <span>payment method</span>
+            <select name="method" class="box">
+               <option value="cash on delivery">cash on delivery</option>
+               <option value="credit card">credit card</option>
+               <option value="paytm">paytm</option>
+               <option value="paypal">paypal</option>
+            </select>
+         </div>
+         <div class="inputBox">
+            <span>address line 01 :</span>
+            <input type="text" name="flat" class="box" required placeholder="e.g. flat no." maxlength="50">
+         </div>
+         <div class="inputBox">
+            <span>address line 02 :</span>
+            <input type="text" name="street" class="box" required placeholder="e.g. street name." maxlength="50">
+         </div>
+         <div class="inputBox">
+            <span>pin code :</span>
+            <input type="number" name="pin_code" class="box" required placeholder="e.g. 123456" min="0">
+         </div>
+      </div>
+
+      <input type="submit" value="order now" class="btn" name="order">
+
+   </form>
+
+</section>
+
+<!-- order section ends -->
+
+<!-- faq section starts  -->
+
+<section class="faq" id="faq">
+
+   <h1 class="heading">FAQ</h1>
+
+   <div class="accordion-container">
+
+      <div class="accordion active">
+         <div class="accordion-heading">
+            <span>comment ca ammarche</span>
+            <i class="fas fa-angle-down"></i>
+         </div>
+         <p class="accrodion-content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, quas. Quidem minima veniam accusantium maxime, doloremque iusto deleniti veritatis quos.
+         </p>
+      </div>
+
+      <div class="accordion">
+         <div class="accordion-heading">
+            <span>ca prend combien une livraison</span>
+            <i class="fas fa-angle-down"></i>
+         </div>
+         <p class="accrodion-content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, quas. Quidem minima veniam accusantium maxime, doloremque iusto deleniti veritatis quos.
+         </p>
+      </div>
+
+      <div class="accordion">
+         <div class="accordion-heading">
+            <span>Comment vous ...</span>
+            <i class="fas fa-angle-down"></i>
+         </div>
+         <p class="accrodion-content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, quas. Quidem minima veniam accusantium maxime, doloremque iusto deleniti veritatis quos.
+         </p>
+      </div>
+
+      <div class="accordion">
+         <div class="accordion-heading">
+            <span>quel est le mode de paimment</span>
+            <i class="fas fa-angle-down"></i>
+         </div>
+         <p class="accrodion-content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, quas. Quidem minima veniam accusantium maxime, doloremque iusto deleniti veritatis quos.
+         </p>
+      </div>
+
+
+      <div class="accordion">
+         <div class="accordion-heading">
+            <span>quel est le processus?</span>
+            <i class="fas fa-angle-down"></i>
+         </div>
+         <p class="accrodion-content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, quas. Quidem minima veniam accusantium maxime, doloremque iusto deleniti veritatis quos.
+         </p>
+      </div>
+
+   </div>
+
+</section>
+
+<!-- faq section ends -->
+<!-- SERVISES  section STARS  -->
+
+<section class="services">
+
+   <div class="box-container">
+
+      <div class="box">
+         <img src="images/icon-1.png" alt="">
+         <h3>non-téster sur animeaux</h3>
+         <p>Lorem ipsum dolor sit amet, m ipsum dolor sit amet, consecteturm ipsum dolor sit amet, consectetur
+            m ipsum dolor sit amet, consecteturconsectetur adipisicing elit. Libero, sunt?</p>
+      </div>
+
+      <div class="box">
+         <img src="images/icon-2.png" alt="">
+         <h3>D'origine naturel</h3>
+         <p>Lorem ipsum dolor sit ametm ipsum dolor sit amet, consecteturm ipsum dolor sit amet, consectetur
+            m ipsum dolor sit amet, consectetur, consectetur adipisicing elit. Libero, sunt?</p>
+      </div>
+
+      <div class="box">
+         <img src="images/icon-3.png" alt="">
+         <h3>ça vient de nos fermes</h3>
+         <p>Lorem ipsum dolor sit amet, consecteturm ipsum dolor sit amet, consectetur
+            m ipsum dolor sit amet, consecteturm ipsum dolor sit amet, consectetur adipisicing elit. Libero, sunt?</p>
+      </div>
+
+  
+
+   </div>
+
+</section>
+
+<!-- services section ends -->
+<!-- footer section starts  -->
+
+<section class="footer"style="background-color:#332711" ;>
+
+   <div class="box-container"style="background-color:url("images/NVFTBACK.png")";>
+
+      <div class="box">
+         <a href="tel:078888888"><i class="fas fa-phone"></i> 078888888</a>
+         <a href="tel:0666666663"><i class="fas fa-phone"></i> 0666666663</a>
+         <a href="mailto:New.oil@gmail.com"><i class="fas fa-envelope"></i> New.oil@gmail.com</a>
+         <a href="#"><i class="fas fa-map-marker-alt"></i> Casablanca maroc</a>
+      </div>
+
+      <div class="box">
+         <a href="#home">home</a>
+         <a href="#about">about</a>
+         <a href="#menu">menu</a>
+         <a href="#gallery">gallery</a>
+         <a href="#contact">contact</a>
+         <a href="#reviews">reviews</a>
+      </div>
+
+      <div class="box">
+         <a href="#">facebook <i class="fab fa-facebook-f"></i></a>
+         <a href="#">instagram <i class="fab fa-instagram"></i></a>
+         <a href="#">linkedin <i class="fab fa-linkedin"></i></a>
+      </div>
+
+   </div>
+
+   <div class="credit">
+      &copy; copyright @ <?= date('Y'); ?> by <span>mr. web designer</span> | all rights reserved!
+   </div>
+
+</section>
+
+<!-- footer section ends -->
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
